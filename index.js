@@ -7,15 +7,6 @@ document.getElementById("clickBtn").addEventListener("click", () => {
     console.log(`Key pressed: ${e.key}`);
   });
 
-  // Secret Action - long press
-  let secretBtn = document.getElementById("secretBtn");
-  let pressTimer;
-  secretBtn.addEventListener("mousedown", () => {
-    pressTimer = setTimeout(() => {
-      alert("Secret long press action triggered! 🤫");
-    }, 1000);
-  });
-  secretBtn.addEventListener("mouseup", () => clearTimeout(pressTimer));
 
   // 🎮 Interactive Elements
   let changeBtn = document.getElementById("changeTextBtn");
